@@ -2,33 +2,40 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] float torqueAmount = 3f;
-    Rigidbody2D rb2d;
-    bool applyLeft = false;
-    bool applyRight = false;
+    public float torqueForce = 3f;
+    private Rigidbody2D rb;
+
+    private enum InputKey
+    {
+        None, Left, Right
+    }
+
+    private InputKey currentKey = InputKey.None;
 
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        applyLeft = Input.GetKey(KeyCode.LeftArrow);
-        applyRight = Input.GetKey(KeyCode.RightArrow);
+        currentKey = Input.GetKey(KeyCode.LeftArrow) ? InputKey.Left
+                   : Input.GetKey(KeyCode.RightArrow) ? InputKey.Right
+                   : InputKey.None;
     }
 
     void FixedUpdate()
     {
-        float torque = 0f;
-        if (applyLeft)
+        switch (currentKey)
         {
-            torque += torqueAmount;
+            case InputKey.Left:
+                rb.AddTorque(torqueForce);
+                break;
+            case InputKey.Right:
+                rb.AddTorque(-torqueForce);
+                break;
+            default:
+                break;
         }
-        if (applyRight)
-        {
-            torque -= torqueAmount;
-        }
-        rb2d.AddTorque(torque);
     }
 }
