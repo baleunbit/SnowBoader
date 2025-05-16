@@ -7,8 +7,7 @@ public class PlayerController : MonoBehaviour
 
     private enum InputKey
     {
-        None, Left, Right
-    }
+        None, Left, Right    }
 
     private InputKey currentKey = InputKey.None;
 
