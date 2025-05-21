@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 48698218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.621671, y: 14.034815, z: -10}
+  m_LocalPosition: {x: 10.757655, y: 14.034815, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5365,7 +5365,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.621671, y: 14.034815, z: -10}
+  m_LocalPosition: {x: 10.757655, y: 14.034815, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5725,7 +5725,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 30.619045, y: 6.173627}
+  m_Offset: {x: 30.619045, y: 20.507385}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5735,7 +5735,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.7702866, y: 43.907852}
+  m_Size: {x: 1.7702866, y: 72.57541}
   m_EdgeRadius: 0
 --- !u!4 &1169820104
 Transform:
@@ -5771,7 +5771,7 @@ GameObject:
   - component: {fileID: 1623013485}
   m_Layer: 0
   m_Name: Ahyeon
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
