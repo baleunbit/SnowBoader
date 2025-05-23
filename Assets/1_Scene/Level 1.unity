@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 48698218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.757655, y: 14.034815, z: -10}
+  m_LocalPosition: {x: 10.911111, y: 14.034815, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 127681072}
   - component: {fileID: 127681071}
   m_Layer: 0
-  m_Name: Finish effect
+  m_Name: Finish Effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,7 +353,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -5365,7 +5365,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.757655, y: 14.034815, z: -10}
+  m_LocalPosition: {x: 10.911111, y: 14.034815, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5691,6 +5691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35accfa99c2545c47a37aca1ea489425, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reloadDelay: 1
 --- !u!61 &1169820103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5918,6 +5919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab9f6dc8137c4543b614f9baf7bbbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reloadDelay: 1
 --- !u!1 &1870966470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6348,6 +6350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fab9f6dc8137c4543b614f9baf7bbbf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reloadDelay: 1
 --- !u!1 &1875334867
 GameObject:
   m_ObjectHideFlags: 0
