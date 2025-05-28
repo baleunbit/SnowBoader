@@ -220,7 +220,7 @@ Transform:
   m_GameObject: {fileID: 48698218}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.911111, y: 14.034815, z: -10}
+  m_LocalPosition: {x: 11.229566, y: 14.034815, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5221,7 +5221,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: c1d46afcc2040e14b8fd44e1e3a288c3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5365,7 +5365,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.911111, y: 14.034815, z: -10}
+  m_LocalPosition: {x: 11.229566, y: 14.034815, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5562,7 +5562,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: e5d53de02819ea84ea6e0e0bb1928577, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5692,6 +5692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reloadDelay: 1
+  finishEffect: {fileID: 127681072}
 --- !u!61 &1169820103
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5819,6 +5820,7 @@ Transform:
   m_Children:
   - {fileID: 372376503}
   - {fileID: 994600166}
+  - {fileID: 1875334870}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1623013482
@@ -5907,6 +5909,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   torqueForce: 10
+  baseSpeed: 20
+  boostSpeed: 30
 --- !u!114 &1623013485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5920,6 +5924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reloadDelay: 1
+  crashEffect: {fileID: 1875334869}
 --- !u!1 &1870966470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6351,6 +6356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reloadDelay: 1
+  crashEffect: {fileID: 0}
 --- !u!1 &1875334867
 GameObject:
   m_ObjectHideFlags: 0
@@ -6413,7 +6419,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 9
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -6463,7 +6469,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -11178,11 +11184,11 @@ Transform:
   m_GameObject: {fileID: 1875334867}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.13, y: 14.75, z: 10}
+  m_LocalPosition: {x: 0.33000016, y: 0.72999954, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1623013481}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -11192,6 +11198,5 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 1870966473}
   - {fileID: 1623013481}
-  - {fileID: 1875334870}
   - {fileID: 48698221}
   - {fileID: 1169820104}
